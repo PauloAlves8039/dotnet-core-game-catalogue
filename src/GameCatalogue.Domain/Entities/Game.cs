@@ -48,10 +48,10 @@ namespace GameCatalogue.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(gender),
                 "Invalid gender. Gender is required");
 
-            DomainExceptionValidation.When(producer.Length < 3,
+            DomainExceptionValidation.When(gender.Length < 3,
                 "Invalid gender, too short, minimum 3 characters");
 
-            DomainExceptionValidation.When(quantity < 0, "Invalid quantity value");
+            DomainExceptionValidation.When(quantity <= 0, "Invalid quantity value");
 
             DomainExceptionValidation.When(image?.Length > 250,
                 "Invalid image name, too long, maximum 250 characters");

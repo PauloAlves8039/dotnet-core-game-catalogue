@@ -1,4 +1,7 @@
-﻿using GameCatalogue.Domain.Interfaces;
+﻿using GameCatalogue.Application.Interfaces;
+using GameCatalogue.Application.Mappings;
+using GameCatalogue.Application.Services;
+using GameCatalogue.Domain.Interfaces;
 using GameCatalogue.Infra.Data.Context;
 using GameCatalogue.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +20,10 @@ namespace GameCatalogue.Infra.IoC
 
             services.AddScoped<IPlatformRepository, PlatformRepository>();
             services.AddScoped<IGameRepository, GameRepository>();
+
+            services.AddScoped<IGameService, GameService>();
+            services.AddScoped<IPlatformService, PlatformService>();
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             return services;
         }

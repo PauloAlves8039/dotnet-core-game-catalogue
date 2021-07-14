@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GameCatalogue.Application\GameCatalogue.Application.csproj" />
     <ProjectReference Include="..\GameCatalogue.Domain\GameCatalogue.Domain.csproj" />
     <ProjectReference Include="..\GameCatalogue.Infra.Data\GameCatalogue.Infra.Data.csproj" />

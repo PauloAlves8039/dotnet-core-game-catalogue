@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="Games\Handlers\" />
-    <Folder Include="Games\Queries\" />
   </ItemGroup>
 
 </Project>

@@ -6,10 +6,16 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GameCatalogue.Domain\GameCatalogue.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Games\Handlers\" />
+    <Folder Include="Games\Queries\" />
   </ItemGroup>
 
 </Project>

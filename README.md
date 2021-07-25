@@ -1,6 +1,9 @@
 <h1 align="center">Game Catalogue</h1>
 
-Repositório de uma aplicação web para simular um catálogo de jogos aplicando conceitos do Clean Architecture.
+Repositório de uma aplicação web para simular um catálogo pessoal de jogos aplicando conceitos do [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+
+Essa aplicação dispõe de um catálago com funcionalidades para inserir, buscar, atualizar e excluir registros em um relacionamento do tipo 1:N (um para muitos)
+onde uma plataforma possui vários jogos, mas um jogo só pertence a uma plataforma dentro desse cenário.
 
 ## :wrench: Recursos Utilizados
 
@@ -12,6 +15,7 @@ Repositório de uma aplicação web para simular um catálogo de jogos aplicando
 - [AutoMapper v10.1.1](https://automapper.org/)
 - [XUnit v2.4.1](https://xunit.net/)
 - [FluentAssertions v5.10.3](https://fluentassertions.com/)
+- [Bootstrap v4.3.1](https://getbootstrap.com/)
 
 ## :floppy_disk: Clonar Repositório
 

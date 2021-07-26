@@ -4,9 +4,11 @@ using GameCatalogue.Application.Services;
 using GameCatalogue.Domain.Interfaces;
 using GameCatalogue.Infra.Data.Context;
 using GameCatalogue.Infra.Data.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace GameCatalogue.Infra.IoC
 {
@@ -24,6 +26,9 @@ namespace GameCatalogue.Infra.IoC
             services.AddScoped<IGameService, GameService>();
             services.AddScoped<IPlatformService, PlatformService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            var myhandlers = AppDomain.CurrentDomain.Load("GameCatalogue.Application");
+            services.AddMediatR(myhandlers);
 
             return services;
         }

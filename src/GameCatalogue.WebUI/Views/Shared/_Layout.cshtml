@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/lib/bootstrap/dist/css/startbootstrap-simple-sidebar.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
 </head>
 <body>
     <div class="d-flex" id="wrapper">
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Game Catalogy</div>
+            <div class="border-end bg-light" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light"><i class="fas fa-book-open px-md-2"></i>Game Catalogy</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" asp-area=""
-                       asp-controller="Home" asp-action="Index">Home</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Games</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Platforms</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" asp-area=""
-                       asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" asp-area=""
+                       asp-controller="Home" asp-action="Index"><i class="fas fa-home px-md-2"></i> Home</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" href="#!"><i class="fas fa-gamepad px-md-2"></i> Games</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" href="#!"><i class="fas fa-tv px-md-2"></i> Platforms</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" asp-area=""
+                       asp-controller="Home" asp-action="Privacy"><i class="fas fa-id-badge px-md-2"></i> Privacy</a>
                 </div>
             </div>
             <div id="page-content-wrapper">
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                         <div class="container-fluid">
-                            <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                            <button class="btn btn-outline-primary" id="sidebarToggle"><i class="fas fa-bars"></i></button>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +35,7 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                    <li class="nav-item"><a class="nav-link">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link"><i class="fas fa-user px-md-2"></i> Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -48,9 +49,9 @@
             </div>
         </div>
     
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-light">
         <div class="container d-flex justify-content-end">
-            &copy; 2021 - GameCatalogue.WebUI - <a asp-area="" asp-controller="Home" asp-action="Privacy"> Privacy</a>
+            &copy; 2021 - Game Catalogue - &nbsp <a asp-area="" asp-controller="Home" asp-action="Privacy" style="text-decoration:none;"> Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

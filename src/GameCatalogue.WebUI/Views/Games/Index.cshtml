@@ -16,8 +16,8 @@
     <div class="col-md-12">
         <div>
             <div class="pull-left">
-                <a asp-action="Create" class="btn btn-primary">
-                    <span title="Register New" class="fas fa-plus"></span> Register New
+                <a asp-action="Create" class="btn btn-outline-success">
+                    <span title="Register New" class="fas fa-plus"></span>
                 </a>
             </div>
         </div>
@@ -60,16 +60,16 @@
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
-                        <span class="fas fa-edit">Edit</span>
+                    <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-outline-success">
+                        <span class="fas fa-edit"></span>
                     </a>
 
-                    <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-primary">
-                        <span class="fas fa-search">Details</span>
+                    <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-outline-primary">
+                        <span class="fas fa-search"></span>
                     </a>
 
-                    <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-danger">
-                        <span class="fas fa-trash-alt">Delete</span>
+                    <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-outline-danger">
+                        <span class="fas fa-trash-alt"></span>
                     </a>
                 </td>
             </tr>

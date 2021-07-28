@@ -15,12 +15,26 @@
             <div class="border-end bg-light" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light"><i class="fas fa-book-open px-md-2"></i>Game Catalogy</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" asp-area=""
-                       asp-controller="Home" asp-action="Index"><i class="fas fa-home px-md-2"></i> Home</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" href="#!"><i class="fas fa-gamepad px-md-2"></i> Games</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" href="#!"><i class="fas fa-tv px-md-2"></i> Platforms</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" asp-area=""
-                       asp-controller="Home" asp-action="Privacy"><i class="fas fa-id-badge px-md-2"></i> Privacy</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" 
+                       asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="fas fa-home px-md-2"></i> 
+                         Home
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light"
+                       asp-area="" asp-controller="Games" asp-action="Index">
+                        <i class="fas fa-gamepad px-md-2"></i> 
+                         Games
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" 
+                       asp-area="" asp-controller="Platforms" asp-action="Index">
+                        <i class="fas fa-tv px-md-2"></i> 
+                         Platforms
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 bg-light" 
+                       asp-area="" asp-controller="Home" asp-action="Privacy">
+                        <i class="fas fa-id-badge px-md-2"></i> 
+                         Privacy
+                    </a>
                 </div>
             </div>
             <div id="page-content-wrapper">

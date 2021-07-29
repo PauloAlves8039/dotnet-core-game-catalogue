@@ -57,13 +57,37 @@ namespace GameCatalogue.WebUI.Controllers
                 {
                     await _platformService.Update(platformDTO);
                 }
-                catch (Exception e) 
+                catch (Exception) 
                 {
                     throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(platformDTO);
+        }
+
+        [HttpGet()]
+        public async Task<ActionResult> Delete(int? id) 
+        {
+            if (id == null) return NotFound();
+            var platformDto = await _platformService.GetById(id);
+            if (platformDto == null) return NotFound();
+            return View(platformDto);
+        }
+
+        [HttpPost(), ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id) 
+        {
+            await _platformService.Remove(id);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Details(int? id) 
+        {
+            if (id == null) return NotFound();
+            var platformDto = await _platformService.GetById(id);
+            if (platformDto == null) return NotFound();
+            return View(platformDto);
         }
     }
 }

@@ -1,0 +1,60 @@
+﻿@model GameCatalogue.Application.DTOs.GameDTO
+
+<h3>Edit Game</h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Producer" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <input asp-for="Producer" class="form-control" />
+                    <span asp-validation-for="Producer" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <input asp-for="Gender" class="form-control" />
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <input asp-for="Quantity" class="form-control" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <input asp-for="Image" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlatformId" class="col-md-2 control-label"></label>
+                <div class="col-md-10 input-group-sm mb-3">
+                    <select asp-for="PlatformId" class="form-control" asp-items="ViewBag.PlatformId"> </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button value="Edit" class="btn btn-success" title="Edit"><i class="fas fa-save buttons-size"></i></button>
+                    <a asp-action="Index" class="btn btn-info text-white" title="Back to List"><i class="fas fa-arrow-left buttons-size"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

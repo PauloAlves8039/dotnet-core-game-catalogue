@@ -1,6 +1,6 @@
 ﻿@model GameCatalogue.Application.DTOs.GameDTO
 
-<h3>Delete Game</h3>
+<h3 class="text-danger text-title">Delete Game</h3>
 
 <h4>Are you sure you want to delete this?</h4>
 
@@ -29,7 +29,9 @@
 
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <button value="Create" class="btn btn-danger" title="Delete"><i class="fas fa-trash buttons-size"></i></button>
-        <a asp-action="Index" class="btn btn-info text-white" title="Back to List"><i class="fas fa-arrow-left buttons-size"></i></a>
+        <button value="Create" class="btn btn-outline-danger" title="Delete"><i
+                class="fas fa-trash buttons-size"></i></button> |
+        <a asp-action="Index" class="btn btn-outline-primary" title="Back to List"><i
+                class="fas fa-arrow-left buttons-size"></i></a>
     </form>
 </div>

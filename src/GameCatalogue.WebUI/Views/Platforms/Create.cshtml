@@ -4,25 +4,25 @@
     ViewData["Title"] = "Register new Platform";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2 class="mb-3 text-success text-title">@ViewData["Title"]</h2>
 
 <form asp-action="Create" method="post">
-    <div class="form-horizontal">
-        <hr />
-        <div asp-validation-summary="All" class="text-danger"></div>
-
-        <div class="form-group">
-            <label asp-for="Name" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+    <div class="row">
+        <div class="col-md-6 float-left">
+            <div class="form-group row mb-3">
+                <label asp-for="Name" class="col-md-2 control-label text-form"></label>
+                <div class="col-md-10">
+                    <input asp-for="Name" class="form-control form-control-sm" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
             </div>
         </div>
-
-        <div class="form-group">
+        <div class="row">
             <div class="col-md-offset-2 col-md-10">
-                <button value="Create" class="btn btn-success" title="Create"><i class="fas fa-save buttons-size"></i></button>
-                <a asp-action="Index" class="btn btn-info text-white" title="Back to List"><i class="fas fa-arrow-left buttons-size"></i></a>
+                <button value="Create" class="btn btn-outline-success" title="Create"><i
+                        class="fas fa-save buttons-size"></i></button>
+                <a asp-action="Index" class="btn btn-outline-primary" title="Back to List"><i
+                        class="fas fa-arrow-left buttons-size"></i></a>
             </div>
         </div>
     </div>

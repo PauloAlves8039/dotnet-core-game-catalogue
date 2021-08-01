@@ -1,22 +1,27 @@
 ﻿@model GameCatalogue.Application.DTOs.PlatformDTO
 
-<h3>Edit Platform</h3>
-
+<h3 class="text-primary text-title">Edit Platform</h3>
 <hr />
-
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+<form asp-action="Edit">
+    <div class="row">
+        <div class="col-md-6 float-left">
+            <div class="form-group row mb-2">
+                <label asp-for="Name" class="col-md-3 control-label text-form"></label>
+                <div class="col-md-8 input-group-sm mb-3">
+                    <input asp-for="Name" class="form-control form-control-sm" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <button value="Create" class="btn btn-success" title="Save"><i class="fas fa-save buttons-size"></i></button>
-                <a asp-action="Index" class="btn btn-info text-white" title="Back to List"><i class="fas fa-arrow-left buttons-size"></i></a>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-10">
+                <button value="Edit" class="btn btn-outline-success" title="Edit"><i
+                        class="fas fa-save buttons-size"></i></button> |
+                <a asp-action="Index" class="btn btn-outline-primary" title="Back to List"><i
+                        class="fas fa-arrow-left buttons-size"></i></a>
             </div>
-        </form>
-
+        </div>
     </div>
-</div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+</form>

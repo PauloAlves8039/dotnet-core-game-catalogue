@@ -85,3 +85,11 @@ body {
   transition: filter 0.8s ease;
   border-radius: 10px 10px;
 }
+
+.text-form {
+  font-weight: bold;
+}
+
+.text-title {
+  font-weight: 700;
+}

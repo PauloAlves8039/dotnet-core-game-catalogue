@@ -1,0 +1,33 @@
+﻿@model GameCatalogue.Application.DTOs.GameDTO
+
+<h3>Game Details</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Gender)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Gender)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Image)</dt>
+        <dd class="col-sm-10">
+            @if (!ViewBag.ImageExist)
+            {
+                <img src="~/images/noimage.png" class="rounded-circle" height="200" width="200" asp-append-version="true" />
+            }
+            else
+            {
+                <img src="~/images/@Model.Image" class="img-thumbnail" height="200" width="200" asp-append-version="true" />
+            }
+        </dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Producer)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Producer)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Quantity)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Quantity)</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-success"><i class="fas fa-save buttons-size"></i></a>
+    <a asp-action="Index" class="btn btn-info text-white" title="Back to List"><i class="fas fa-arrow-left buttons-size"></i></a>
+</div>
+
+

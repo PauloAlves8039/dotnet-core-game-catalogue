@@ -23,7 +23,7 @@ namespace GameCatalogue.Infra.Data.Repositories
 
         public async Task<Game> GetByIdAsync(int? id)
         {
-            return await _gameContext.Games.FindAsync(id);
+            return await _gameContext.Games.Include(g => g.Platform).SingleOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<Game> GetGamePlatformAsync(int? id)

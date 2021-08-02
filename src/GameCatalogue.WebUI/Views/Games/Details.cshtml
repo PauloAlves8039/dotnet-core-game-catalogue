@@ -6,6 +6,8 @@
     <dl class="row">
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</dt>
         <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Producer)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Producer)</dd>
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Gender)</dt>
         <dd class="col-sm-10">@Html.DisplayFor(model => model.Gender)</dd>
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Image)</dt>
@@ -19,10 +21,10 @@
                 <img src="~/images/@Model.Image" class="img-thumbnail" height="170" width="170" asp-append-version="true" />
             }
         </dd>
-        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Producer)</dt>
-        <dd class="col-sm-10">@Html.DisplayFor(model => model.Producer)</dd>
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Quantity)</dt>
         <dd class="col-sm-10">@Html.DisplayFor(model => model.Quantity)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Platform)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Platform.Name)</dd>
     </dl>
 </div>
 <div>

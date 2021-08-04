@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameCatalogue.Infra.IoC", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameCatalogue.WebUI", "src\GameCatalogue.WebUI\GameCatalogue.WebUI.csproj", "{8C626E19-5F77-4BD7-BA5F-36E42DC8ED42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCatalogue.Domain.Tests", "src\GameCatalogue.Domain.Tests\GameCatalogue.Domain.Tests.csproj", "{BD27475A-687C-4F4A-A86A-DFCD9048F00F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameCatalogue.Domain.Tests", "src\GameCatalogue.Domain.Tests\GameCatalogue.Domain.Tests.csproj", "{BD27475A-687C-4F4A-A86A-DFCD9048F00F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

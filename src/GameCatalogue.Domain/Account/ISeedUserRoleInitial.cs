@@ -1,6 +1,6 @@
 ﻿namespace GameCatalogue.Domain.Account
 {
-    public interface ISeedUserRoleInicial
+    public interface ISeedUserRoleInitial
     {
         void SeedUsers();
         void SeedRoles();

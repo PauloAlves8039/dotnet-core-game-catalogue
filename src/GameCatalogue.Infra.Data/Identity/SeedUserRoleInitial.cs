@@ -4,7 +4,7 @@ using System;
 
 namespace GameCatalogue.Infra.Data.Identity
 {
-    public class SeedUserRoleInitial : ISeedUserRoleInicial
+    public class SeedUserRoleInitial : ISeedUserRoleInitial
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;

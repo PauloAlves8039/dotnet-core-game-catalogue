@@ -6,6 +6,6 @@ namespace GameCatalogue.Domain.Account
     {
         Task<bool> Authenticate(string email, string password);
         Task<bool> RegisterUser(string email, string password);
-        Task<bool> Logout();
+        Task Logout();
     }
 }

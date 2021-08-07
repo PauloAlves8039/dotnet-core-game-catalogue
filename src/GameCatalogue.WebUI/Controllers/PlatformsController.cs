@@ -1,11 +1,13 @@
 ﻿using GameCatalogue.Application.DTOs;
 using GameCatalogue.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
 namespace GameCatalogue.WebUI.Controllers
 {
+    [Authorize]
     public class PlatformsController : Controller
     {
         private readonly IPlatformService _platformService;
@@ -66,6 +68,7 @@ namespace GameCatalogue.WebUI.Controllers
             return View(platformDTO);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet()]
         public async Task<ActionResult> Delete(int? id) 
         {

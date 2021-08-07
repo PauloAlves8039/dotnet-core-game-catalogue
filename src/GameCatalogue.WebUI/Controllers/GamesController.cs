@@ -1,5 +1,6 @@
 ﻿using GameCatalogue.Application.DTOs;
 using GameCatalogue.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameCatalogue.WebUI.Controllers
 {
+    [Authorize]
     public class GamesController : Controller
     {
         private readonly IGameService _gameService;
@@ -70,6 +72,7 @@ namespace GameCatalogue.WebUI.Controllers
             return View(gameDTO);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet()]
         public async Task<IActionResult> Delete(int? id) 
         {

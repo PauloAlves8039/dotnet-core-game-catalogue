@@ -14,11 +14,11 @@
         <dd class="col-sm-10">
             @if (!ViewBag.ImageExist)
             {
-                <img src="~/images/noimage.png" class="rounded-circle" height="170" width="170" asp-append-version="true" />
+                <img src="~/images/noimage.png" class="rounded-circle" height="150" width="150" asp-append-version="true" />
             }
             else
             {
-                <img src="~/images/@Model.Image" class="img-thumbnail" height="170" width="170" asp-append-version="true" />
+                <img src="~/images/@Model.Image" class="img-thumbnail" height="150" width="150" asp-append-version="true" />
             }
         </dd>
         <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Quantity)</dt>

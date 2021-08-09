@@ -28,7 +28,7 @@ namespace GameCatalogue.Infra.Data.Identity
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = _userManager.CreateAsync(user, "Play#2021").Result;
+                IdentityResult result = _userManager.CreateAsync(user, "Playgame#2021").Result;
 
                 if (result.Succeeded)
                 {
@@ -47,7 +47,7 @@ namespace GameCatalogue.Infra.Data.Identity
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = _userManager.CreateAsync(user, "Play#2021").Result;
+                IdentityResult result = _userManager.CreateAsync(user, "Playgame#2021").Result;
 
                 if (result.Succeeded)
                 {

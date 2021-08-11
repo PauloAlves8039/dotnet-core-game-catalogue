@@ -28,6 +28,12 @@ Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstr
 
 `git clone https://github.com/PauloAlves8039/dotnet-core-game-catalogue.git`
 
+## :camera: Diagrama do Banco de Dados
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/diagrama-game-catalogy.png" 
+   title="Diagrama do Banco de Dados" /></p>
+Diagrama gerado no Microsoft SQL Server Management Studio, o seu objetivo é exibir a estrutura da base de dados criada no projeto.
+
 ## Author
 
 :boy: [Paulo Alves](https://github.com/PauloAlves8039)

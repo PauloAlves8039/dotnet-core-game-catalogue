@@ -1,6 +1,6 @@
 <h1 align="center">Game Catalogue</h1>
 
-Repositório de uma aplicação web desenvolvida para fins acadêmicos, o seu propósito de simular um catálogo pessoal de jogos aplicando conceitos do [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+Repositório de uma aplicação web desenvolvida para fins acadêmicos, o seu propósito de simular um catálogo pessoal de jogos aplicando conceitos do [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), esse projeto está sujeito a futuras implemtações de acordo com suas necessidades.
 
 Essa aplicação dispõe de um catálago com funcionalidades para inserir, buscar, atualizar e excluir registros em um relacionamento do tipo 1:N (um para muitos)
 onde uma plataforma possui vários jogos, mas um jogo só pertence a uma plataforma dentro desse cenário, já para a criação do banco de dados foram usados o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos
@@ -33,6 +33,38 @@ Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstr
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/diagrama-game-catalogy.png" 
    title="Diagrama do Banco de Dados" /></p>
 Diagrama gerado no Microsoft SQL Server Management Studio, o seu objetivo é exibir a estrutura da base de dados criada no projeto.
+
+## :camera: Tela de Home
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/home.png" /></p>
+Página Home com uma simples apresentação do projeto.
+
+## :camera: Tela de Login
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/login.png" /></p>
+Responsável pela autenticação dos usuários, nessa implementação foram utilziados recursos do ASP .NET Core Identity.
+
+## :camera: Lista de Plataformas
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/platforms.png" /></p>
+Como resultado nessa tela é exibida uma lista com as plataformas cadastradas, podendo ter acesso a uma outra tela para adicionar uma nova plataforma, 
+em sua tabela ficam disponíveis botões de ações para edição, exibição e exclusão registros.
+
+## :camera: Lista de Jogos
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games.png" /></p>
+Seguindo a mesma premissa da tela de platafomas aqui é exibida uma lista de jogos em uma tabela, tendo botões disponíveis com as mesmas ações para manipulações de registros.
+
+## :camera: Tela de Cadastro de Jogo
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games-create.png" /></p>
+Essa tela é responsável pela adição de jogos, no qual contém uma interface intuitiva para salvar registros.
+
+## :camera: Tela de Detalhes de Jogo
+
+<p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games-details.png" /></p>
+Essa tela é responsável pela exibição de informações de um jogo, dentro dessa visualização é possível conferir a plataforma no qual o jogo pertence.
+
 
 ## Author
 

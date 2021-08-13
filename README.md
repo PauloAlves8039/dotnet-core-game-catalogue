@@ -23,6 +23,7 @@ Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstr
 - [XUnit v2.4.1](https://xunit.net/)
 - [FluentAssertions v5.10.3](https://fluentassertions.com/)
 - [Bootstrap v4.3.1](https://getbootstrap.com/)
+- [Recurso de imagem - Pexels](https://www.pexels.com/pt-br/foto/macbook-prateado-ao-lado-do-sony-ps4-dualshock-4-preto-i-phone-6-prateado-e-chaveiro-redondo-preto-na-mesa-de-madeira-marrom-682933/)
 
 ## :floppy_disk: Clonar Repositório
 
@@ -55,12 +56,12 @@ em sua tabela ficam disponíveis botões de ações para edição, exibição e 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games.png" /></p>
 Seguindo a mesma premissa da tela de platafomas aqui é exibida uma lista de jogos em uma tabela, tendo botões disponíveis com as mesmas ações para manipulações de registros.
 
-## :camera: Tela de Cadastro de Jogo
+## :camera: Tela de Cadastro do Jogo
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games-create.png" /></p>
 Essa tela é responsável pela adição de jogos, no qual contém uma interface intuitiva para salvar registros.
 
-## :camera: Tela de Detalhes de Jogo
+## :camera: Tela de Detalhes do Jogo
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-game-catalogue/blob/master/src/GameCatalogue.WebUI/wwwroot/images/games-details.png" /></p>
 Essa tela é responsável pela exibição de informações de um jogo, dentro dessa visualização é possível conferir a plataforma no qual o jogo pertence.

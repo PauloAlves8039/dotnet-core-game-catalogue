@@ -9,7 +9,7 @@ namespace GameCatalogue.Domain.Tests
     public class GameUnitTest
     {
         [Fact(DisplayName = "Create Game With Valid State")]
-        public void CreateGame_WithValidParameters_ResultObjectValidState() 
+        public void CreateGame_WithValidParameters_ResultObjectValidState()
         {
             Action action = () => new Game(1, "Game Name", "Game Producer", "Game Action", 1, "Game image");
             action.Should().NotThrow<DomainExceptionValidation>();
@@ -68,14 +68,14 @@ namespace GameCatalogue.Domain.Tests
         public void CreateGame_InvalidQuantityValue_DomainException()
         {
             Action action = () => new Game(1, "Game Name", "Game Producer", "Game Action", -1, "Game image");
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("Invalid quantity value"); ;
+            action.Should().Throw<DomainExceptionValidation>().WithMessage("Invalid quantity value");
         }
 
         [Fact(DisplayName = "Create Game With Zero Quantity Value")]
         public void CreateGame_ZeroQuantityValue_DomainException()
         {
             Action action = () => new Game(1, "Game Name", "Game Producer", "Game Action", 0, "Game image");
-            action.Should().Throw<DomainExceptionValidation>().WithMessage("Invalid quantity value"); ;
+            action.Should().Throw<DomainExceptionValidation>().WithMessage("Invalid quantity value");
         }
 
         [Fact(DisplayName = "Create Game With Long Image Name")]
@@ -105,6 +105,6 @@ namespace GameCatalogue.Domain.Tests
         {
             Action action = () => new Game(1, "Game Name", "Game Producer", "Game Action", 1, "");
             action.Should().NotThrow<DomainExceptionValidation>();
-        }   
+        }
     }
 }
